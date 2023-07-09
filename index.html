@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
+    <header class="header" id="home">
+        <div class="container header-menu">
             <div class="header-top">
                 <a class="header-top-logo" href="#">
                     <img src="./image/header/logo.png" alt="BOSO logo`s" width="190" height="24">
                 </a>
-                <svg class="" width="24" height="24">
-                  <use href="./image/icons.svg#menu"></use>
-                </svg>
+                <a href="#menu">
+                    <svg class="header-top-icon" width="24" height="24">
+                      <use href="./image/icons.svg#menu"></use>
+                    </svg>
+                </a>
             </div>
             <div class="header-bottom-content">
                 <span class="header-bottom-icon">
@@ -27,38 +29,93 @@
                       <use href="./image/icons.svg#sound-waves"></use>
                     </svg>
                 </span>
-                <h1>The world shades. Your music shines.</h1>
+                <h1 class="hero-title">
+                    The world shades. Your music shines.
+                </h1>
             </div>
         </div>      
     </header>
     <main>
-        <section class="section-menu">
+        
+        <section class="section-recommended" id="recommended">
             <div class="container">
-                <div class="menu">
-                    <nav>
-                        <a class="menu-logo" href="#">
-                            <img src="./image/header/logo.png" alt="BOSO logo`s" width="190" height="24">
-                        </a>
-                        <ul class="menu-nav-list">
-                            <li class="menu-nav-items">Home</li>
-                            <li class="menu-nav-items">recommended</li>
-                            <li class="menu-nav-items">Categories</li>
-                            <li class="menu-nav-items">How to buy</li>
-                        </ul>
-                    </nav>
-                    <button class="menu-close" type="submit">
-                        <svg class="icon" width="24" height="24">
-                            <use href="./image/icons.svg#close"></use>
-                        </svg>
-                    </button>
-                </div>
+                <h2 class="section-title">
+                    Recommended
+                </h2>
+                <ul class="recommended-list">
+                    <li class="recommended-items">
+                        <img class="recommended-img" src="./image/recommended/img-1.png" alt="Bose portable Smart speaker" width="324" height="320">
+                        <div class="recommended-container-text">
+                            <h3 class="recommended-title">Bose portable Smart speaker</h3>
+                            <p class="recommended-text">Smart home</p>
+                            <p class="recommended-text-price">&#x24; 399.00</p>
+                        </div> 
+                    </li>
+                    <li class="recommended-items">
+                        <img class="recommended-img" src="./image/recommended/img-2.png" alt="SoundLink Flex Bluetooth speaker" width="324" height="320">
+                        <div class="recommended-container-text">
+                            <h3 class="recommended-title">SoundLink Flex Bluetooth speaker</h3>
+                            <p class="recommended-text">Portable bluetooth</p>
+                            <p class="recommended-text-price">&#x24; 149.00</p>
+                        </div> 
+                    </li>
+                    <li class="recommended-items">
+                        <img class="recommended-img" src="./image/recommended/img-3.png" alt="Bose portable Smart speaker" width="324" height="320">
+                        <div class="recommended-container-text">
+                            <h3 class="recommended-title">SoundLink Color Bluetooth speaker II</h3>
+                            <p class="recommended-text">Portable bluetooth</p>
+                            <p class="recommended-text-price">&#x24; 129.00</p>
+                        </div> 
+                    </li>
+                </ul>
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <section id="categories">
+            <div class="container">
+                <h2 class="section-title">
+                    Browse Bose products by category
+                </h2>
+            </div>
+        </section>
+        <section id="buy">
+            <div class="container">
+                <h2 class="section-title">Why buy direct from Bose</h2>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
+
+    <div class="section-menu" id="menu">
+        <div class="container menu">
+            <div class="header-menu-top">
+                <a class="menu-logo" href="#">
+                    <img src="./image/header/logo.png" alt="BOSO logo`s" width="190" height="24">
+                </a>
+                <a class="menu-close" href="#home">
+                    <svg class="icon" width="24" height="24">
+                        <use href="./image/icons.svg#close"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav>
+                <ul class="menu-nav-list">
+                    <li class="menu-nav-items">
+                        <a class="menu-nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="menu-nav-items">
+                        <a class="menu-nav-link" href="#recommended">Recommended</a>
+                    </li>
+                    <li class="menu-nav-items">
+                        <a class="menu-nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="menu-nav-items">
+                        <a class="menu-nav-link" href="#buy">How to buy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

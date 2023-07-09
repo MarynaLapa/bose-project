@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Inter, sans-serif;
     color: #292929;
@@ -31,21 +35,25 @@ img {
   | Header 
   |============================
 */
-.header{
+.header {
     margin: 0 auto;
     max-width: 1260px;
+    height: 720px;
     padding: 64px 120px;
     background-color: #E8EFF9;
     background-image: url(../image/header/header-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
+}
+.header-menu {
+    display: list-item;
+    flex-direction: column;
+    gap: 356px;
 }
 .header-top {
-    padding-top: 64px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 356px;
 }
 .header-top-logo {
     display: inline-block;
@@ -57,28 +65,38 @@ img {
     display: block;
     margin-bottom: 40px;
 }
-h1 {
+.hero-title {
     font-size: 48px;
     font-style: italic;
     font-weight: 800;
+    line-height: 1;
     letter-spacing: -1.5px;
 }
 .section-menu {
-    padding: 64px 120px 384px;
+    max-width: 1260px;
+    height: 720px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 500ms;
+    margin: 0 auto;
+    padding: 64px 120px;
     background-color: #E8EFF9;
 }
-.menu {
+.section-menu:target {
+    transform: translateX(0%);
+}
+.header-menu-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 64px;
+    /* height: 100vh; */
 }
 .menu-nav-list {
-    text-transform: uppercase;
-    color: #292929;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 2px;
+    
 }
 .menu-close {
     display: block;
@@ -94,4 +112,48 @@ h1 {
 }
 .menu-nav-items:last-child {
     margin-bottom: 0;
+}
+.menu-nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #292929;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+/**
+  |============================
+  | Recommended 
+  |============================
+*/ 
+.section-recommended {
+    padding: 120px 0;
+}
+.section-title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+}
+.recommended-list {
+    display: flex;
+    gap: 24px;
+}
+.recommended-items {
+    flex-basis: calc((100% - 2*24px) / 3);
+}
+.recommended-img {
+    margin-bottom: 32px;
+}
+.recommended-title {
+    margin-bottom: 8px;
+    letter-spacing: -1.5px;
+}
+.recommended-text {
+    margin-bottom: 12px;
+}
+.recommended-text-price {
+    font-weight: 700;
 }
