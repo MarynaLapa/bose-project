@@ -73,6 +73,7 @@ img {
     letter-spacing: -1.5px;
 }
 .section-menu {
+    display: none;
     max-width: 1260px;
     height: 720px;
     position: fixed;
@@ -136,6 +137,7 @@ img {
     font-size: 48px;
     line-height: 1;
     letter-spacing: -1.5px;
+    margin-bottom: 64px;
 }
 .recommended-list {
     display: flex;
@@ -156,4 +158,81 @@ img {
 }
 .recommended-text-price {
     font-weight: 700;
+}
+
+/**
+  |============================
+  | Section products
+  |============================
+*/
+.section-products {
+    padding-bottom: 120px;
+}
+.products-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+}
+.products-list-wrap {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+.products-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/**
+  |============================
+  | Section-buy
+  |============================
+*/
+.section-buy {
+    padding-bottom: 120px;
+}
+.buy {
+    display: flex;
+    gap: 110px;
+}
+.buy-benefits-list {
+    width: 498px;
+    margin-bottom: 40px;
+}
+.buy-benefits-items {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+.buy-benefits-items:last-child {
+    margin-bottom: 0;
+}
+.buy-text {
+    width: 498px;
+    line-height: 1.69;
+}
+.buy-title {
+    width: 412px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+}
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+.footer {
+    margin: 0 auto;
+    max-width: 1260px;
+    height: 460px;
+    padding: 64px 120px;
+    background-color: #E8EFF9;
+    background-image: url(../image/footer/footer-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
