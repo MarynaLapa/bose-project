@@ -47,7 +47,7 @@ img {
     /* background-size: cover; */
 }
 .header-menu {
-    display: list-item;
+    display: flex;
     flex-direction: column;
     gap: 356px;
 }
